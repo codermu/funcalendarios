@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         let day = components.day
         
         let dateFormatter: NSDateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "id-ID")
+
         
         let months = dateFormatter.monthSymbols
         let monthSymbol = months[month-1] // month - from your date components
@@ -40,37 +42,38 @@ class ViewController: UIViewController {
         lblday.text = nameofdaySymbol
         
         var arrMyActivities = [
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
-            "selalu riang serta gembira",
-            "tak pernah malas kalau bekerja",
-            "aku adalah",
+            "Pergi ke shopping mall yuk",
+            "Mumpung libur, saatnya main game",
+            "Nambah jam tidur juga kadang kadang bagus lho buat kesehatan",
+            "Udah cek film film baru di bioskop ? Hari ini pergi nonton asik juga nih",
+            "Temen paling asik adalah temen di masa sekolah, yuk ajakin mereka hangout",
+            "Masih inget sedihnya waktu adegan Rangga pergi ninggalin Cinta di bandara, nonton AADC lagi ah",
+            "Jalan jalan ke Bandung",
+            "Saatnya keluar keringet, F U T S A L !",
+            "Nonton drama korea dari episode 1 sampe tamat",
+            "Game COC nih level perlu dinaikin",
+            "Udah pernah main helicopter remote control ? Asik lho. Cari ke toko mainan yuk",
+            "Pergi ke pasar buah. Cari duren. Beli. Belah. Makannnn",
+            "Udah lama kan ga ke timezone ? Ayo main",
+            "Masa yang paling indah masa kanak kanak. Masih inget jajanan yang suka kamu beli waktu kecil ? Yuk cari",
+            "Paling enak hari ini pergi berenang",
+            "Jaman sekarang penampilan penting. Saatnya ke salon potong rambut model terbaru",
+            "Pergi ke shopping mall yuk",
+            "Mumpung libur, saatnya main game",
+            "Nambah jam tidur juga kadang kadang bagus lho buat kesehatan",
+            "Udah cek film film baru di bioskop ? Hari ini pergi nonton asik juga nih",
+            "Temen paling asik adalah temen di masa sekolah, yuk ajakin mereka hangout",
+            "Masih inget sedihnya waktu adegan Rangga pergi ninggalin Cinta di bandara, nonton AADC lagi ah",
+            "Jalan jalan ke Bandung",
+            "Saatnya keluar keringet, F U T S A L !",
+            "Nonton drama korea dari episode 1 sampe tamat",
+            "Game COC nih level perlu dinaikin",
+            "Udah pernah main helicopter remote control ? Asik lho. Cari ke toko mainan yuk",
+            "Pergi ke pasar buah. Cari duren. Beli. Belah. Makannnn",
+            "Udah lama kan ga ke timezone ? Ayo main",
+            "Masa yang paling indah masa kanak kanak. Masih inget jajanan yang suka kamu beli waktu kecil ? Yuk cari",
+            "Paling enak hari ini pergi berenang",
+            "Jaman sekarang penampilan penting. Saatnya ke salon potong rambut model terbaru",
         ]
         
         for i in 1...50 {
